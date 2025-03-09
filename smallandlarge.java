@@ -1,24 +1,23 @@
-public class smallandlarge {  
-    public static void main(String[] args) {  // Fix: String with capital 'S'
-        int a[] = {50, 100, 150, 200, 250, 300};  // Define array  
-        int max = a[0];  // Assume first element is the maximum  
+public class SmallAndLarge {  
+    public static void main(String[] args) {  
+        int a[] = {900, 100, 650, 200, 250, 300};  // Define array  
 
+        // Finding Maximum Element
+        int max = a[0];  
         for (int i = 1; i < a.length; i++) {  
             if (a[i] > max) {  
-                max = a[i];  // Update max if a bigger element is found  
+                max = a[i];  
             }
         }
+        System.out.println("Maximum element: " + max);  
 
-        System.out.println("Maximum element: " + max);  // Print result
-    
-        int min = a[0];  // Assume first element is the maximum  
-
+        // Finding Minimum Element
+        int min = a[0];  
         for (int i = 1; i < a.length; i++) {  
-            if (a[i] > min) {  
-                max = a[i];  // Update max if a bigger element is found  
+            if (a[i] < min) {  // Corrected condition
+                min = a[i];  
             }
         }
-
-        System.out.println("Minimum element: " + min);
+        System.out.println("Minimum element: " + min);  
     }
 }
