@@ -1,0 +1,18 @@
+public class CountEvenOdd {
+    public static void main(String[] args) {
+        int[] arr = {10, 21, 34, 45, 56, 67, 78, 89, 90}; // Given array
+
+        int evenCount = 0, oddCount = 0;
+
+        for (int num : arr) {
+            if (num % 2 == 0) {  // Even condition
+                evenCount++;
+            } else {  // Odd condition
+                oddCount++;
+            }
+        }
+
+        System.out.println("Total Even Numbers: " + evenCount);
+        System.out.println("Total Odd Numbers: " + oddCount);
+    }
+}
