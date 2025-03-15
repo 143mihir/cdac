@@ -1,0 +1,43 @@
+
+
+class Q13 {
+    public static void main(String[] args) {
+        int[] physicsMarks = new int[20];
+        int[] chemistryMarks = new int[20];
+        int[] mathsMarks = new int[20];
+
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Enter marks for Student " + (i + 1) + ":");
+
+            System.out.print("Physics: ");
+            physicsMarks[i] = sc.nextInt();
+
+            System.out.print("Chemistry: ");
+            chemistryMarks[i] = sc.nextInt();
+
+            System.out.print("Maths: ");
+            mathsMarks[i] = sc.nextInt();
+        }
+		int greater75 = 0;
+		int lesser40 = 0;
+		for (int i = 0; i < 5; i++) {
+            System.out.println("Student " + (i + 1) + ": Physics = " + physicsMarks[i] 
+                               + ", Chemistry = " + chemistryMarks[i] 
+                               + ", Maths = " + mathsMarks[i]);
+			double percentage = (double)(physicsMarks[i]+chemistryMarks[i]+mathsMarks[i])/3;
+			if (percentage>=75)
+			{
+				greater75++;
+			}
+			if (percentage<=40)
+			{
+				lesser40++;
+			}
+        }
+		
+		System.out.println("Students securing with 75% and above is: "+greater75);
+		System.out.println("Students securing with 40% and less is: "+lesser40);
+    }
+}
