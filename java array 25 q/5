@@ -1,0 +1,14 @@
+{
+	 public static void main(String[] args)
+	 {
+		 int[] arr = {22,31,30,1,60,100,3000};
+		 
+		 int sum=0;
+		 for ( int x : arr )
+		 {
+			 sum+=x;
+		 }
+		 System.out.println("sum of all the elements in the array is: "+sum);
+		 System.out.println("Average of all the elements in the array is: "+sum/arr.length);
+	 }
+ }
