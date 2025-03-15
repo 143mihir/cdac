@@ -1,0 +1,20 @@
+public class SumAndAverage {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50}; // Example array
+
+        int sum = 0;
+
+        // Compute sum using a loop
+        for (int num : arr) {
+            sum += num;
+        }
+
+        // Compute average
+        double average = (double) sum / arr.length;
+
+        // Print results
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+    }
+}
+
